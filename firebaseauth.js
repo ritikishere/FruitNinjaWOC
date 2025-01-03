@@ -52,7 +52,7 @@
         const docRef=doc(db, "users", user.uid);
         setDoc(docRef,userData)
         .then(()=>{
-            window.location.href='registration.html';
+            window.location.href='main.html';
         })
         .catch((error)=>{
             console.error("error writing document", error);
