@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fruit Ninja PROJECT WOC </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQ.css">
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebaseauth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="topbar">
+            <ul>
+                <li><details><summary>Game Rule:</summary>
+                Slice the fruits and earn points. Game will be Over if three or more fruits get missed</details></li>
+                <li>
+                    <details>
+                        <summary>Score Details:</summary>
+                        <h1>Apple: 4</h1>
+                        <h1>Mango: 3 </h1>
+                        <h1>Banana: 2</h1>
+                        <h1>PineApple: 3</h1>
+                        <h1>Cherimoya: 2</h1>
+                        <h1>Orange: 2</h1>
+                        <h1>Lychee: 2</h1>
+                        <h1>Melon: 1</h1>
+                        <h1>Grape-Black: 1</h1>
+                    </details>
+
+                </li>
+            </ul>
+        </div>
+        <button class="foggle-btn" id="fogglebtn">
+            <img id="fhreel" src="three-horizontal-lines-outline-icon.png" alt="Swipe">
+        </button>
+        <canvas id="gameCanvas"></canvas>
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><div id="navbar"></div></li>
+                <li>
+                    <details>
+                        <summary>Score Details</summary>
+                        <h1>Apple: 4</h1>
+                        <h1>Mango: 3 </h1>
+                        <h1>Banana: 2</h1>
+                        <h1>PineApple: 3</h1>
+                        <h1>Cherimoya: 2</h1>
+                        <h1>Orange: 2</h1>
+                        <h1>Lychee: 2</h1>
+                        <h1>Melon: 1</h1>
+                        <h1>Grape-Black: 1</h1>
+                    </details>
+                </li>
+                <li><details><summary>Game Rule:</summary>
+                    Slice the fruits and earn points. Game will be Over if three or more fruits get missed</details></li>
+                    <li>
+            </ul>
+        </div>
+        <button class="toggle-btn" id="togglebtn">
+            <img id="threel" src="three-horizontal-lines-outline-icon.png" alt="Swipe">
+        </button>
+        <audio id="Slice" src="Slice.mp3"></audio>
+        <audio id="FruitSlice" src="FruitSlice.mp3"></audio>
+        <audio id="BombSliced" src="BombSliced.mp3"></audio>
+        <audio id="GameOverMusic" src="GameOver.wav"></audio>
+        <div id="buttons-container">
+            <button id="play-button">Play</button>
+            <button id="replay-button" style="display: none;">Replay</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
